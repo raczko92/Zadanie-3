@@ -9,20 +9,20 @@ const homePage = new HomePage();
   describe("Testing of LMS", () => {
     it("Test number 1", () => {
       loginPage.navigate();
-      loginPage.validateLoginOne();
-      loginPage.validatePasswordOne();
-      loginPage.validateButton();
-      homePage.validateButtonMenu();
-      homePage.validateLogOutOne();
+      loginPage.insertFirstLogin();
+      loginPage.insertFirstPassword();
+      loginPage.clickLoginButton();
+      homePage.clickButtonMenu();
+      homePage.clickFirstLogOutButton();
        });
     
 
     it("Test number 2", () => {
       loginPage.navigate();
-      loginPage.validateLoginTwo();
-      loginPage.validatePasswordTwo();
-      loginPage.validateButton();
-      homePage.validateButtonMenu();
-      homePage.validateLogOutTwo();
+      loginPage.insertSecondLogin();
+      loginPage.insertSecondPassword();
+      loginPage.clickLoginButton();
+      homePage.clickButtonMenu();
+      homePage.clickSecondLogOutButton();
        });
     });

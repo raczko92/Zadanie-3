@@ -1,13 +1,13 @@
 export class HomePage {
-    validateButtonMenu() {
+    clickButtonMenu() {
       cy.get('.css-7afvtf').click();
      
      }
-    validateLogOutOne() {
+    clickFirstLogOutButton() {
       cy.get(':nth-child(9) > .css-bve2vl').click();
      
      }
-    validateLogOutTwo() {
+    clickSecondLogOutButton() {
       cy.get(':nth-child(7) > .css-bve2vl').click();
      
      }
